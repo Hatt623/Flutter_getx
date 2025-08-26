@@ -14,4 +14,15 @@ class CounterTugasController extends GetxController {
       Get.snackbar("Number:", "Your number:${number}");
     }
   }
+
+  void decrement(){
+    if (number < 100) {
+      number --;
+      Get.snackbar("Number:", "your number is ${number}");
+    }
+
+    else {
+      Get.snackbar("Number:", "Your number:${number}");
+    }
+  }
 }

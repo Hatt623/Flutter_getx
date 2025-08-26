@@ -4,6 +4,8 @@ import '../modules/counter/bindings/counter_binding.dart';
 import '../modules/counter/views/counter_view.dart';
 import '../modules/counterTugas/bindings/counter_tugas_binding.dart';
 import '../modules/counterTugas/views/counter_tugas_view.dart';
+import '../modules/form_pendaftaran/bindings/form_pendaftaran_binding.dart';
+import '../modules/form_pendaftaran/views/form_pendaftaran_view.dart';
 import '../modules/home/bindings/home_binding.dart';
 import '../modules/home/views/home_view.dart';
 
@@ -29,6 +31,11 @@ class AppPages {
       name: _Paths.COUNTER_TUGAS,
       page: () => const CounterTugasView(),
       binding: CounterTugasBinding(),
+    ),
+    GetPage(
+      name: _Paths.FORM_PENDAFTARAN,
+      page: () => const FormPendaftaranView(),
+      binding: FormPendaftaranBinding(),
     ),
   ];
 }

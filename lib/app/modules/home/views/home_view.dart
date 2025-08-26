@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
+// import 'package:xiirpl1getx/app/modules/form_pendaftaran/views/form_pendaftaran_view.dart';
 
 import '../controllers/home_controller.dart';
 
@@ -21,10 +22,22 @@ class HomeView extends GetView<HomeController> { //controller
               onPressed: () => Get.toNamed('/counter'),
               child: Text('Go to counter')
             ),
+            SizedBox(height: 20,),
             ElevatedButton(
               onPressed: () => Get.toNamed('/counter-tugas'),
               child: Text('Go to counterTugas')
             ),
+            SizedBox(height: 20,),
+
+            // Container(
+            //   child: InkWell(
+            //     onTap: Get.to(() => FormPendaftaranView()),
+            //   ),
+            // ),
+            ElevatedButton(
+               onPressed: () => Get.toNamed('/form-pendaftaran'),
+            child: Text('Go to form perndaftaran')),
+
           ],
         ),
       ),

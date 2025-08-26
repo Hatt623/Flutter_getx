@@ -21,9 +21,10 @@ class CounterTugasView extends GetView<CounterTugasController> {
               "Hitungan ke:${controller.number.toString()}",
               style: TextStyle(fontSize: controller.number.toDouble()),
             )),
-            Text("test"),
             ElevatedButton(
-                onPressed: controller.increment, child: Text("increment"))
+              onPressed: controller.increment, child: Text("increment")),
+            ElevatedButton(
+              onPressed: controller.decrement, child: Text("decrement"))
           ],
         ),
       ),
