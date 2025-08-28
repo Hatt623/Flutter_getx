@@ -6,6 +6,8 @@ import '../controllers/alquran_controller.dart';
 
 class AlquranView extends GetView<AlquranController> {
   AlquranView({Key? key}) : super(key: key);
+  final controller = Get.put<AlquranController>(AlquranController());
+
 
   @override
   Widget build(BuildContext context) {

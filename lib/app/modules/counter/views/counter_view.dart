@@ -5,7 +5,8 @@ import 'package:get/get.dart';
 import '../controllers/counter_controller.dart';
 
 class CounterView extends GetView<CounterController> {
-  const CounterView({Key? key}) : super(key: key);
+   CounterView({Key? key}) : super(key: key);
+   final controller = Get.put<CounterController>(CounterController());
   @override
   Widget build(BuildContext context) {
     return Scaffold(
